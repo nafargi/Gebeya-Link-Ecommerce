@@ -1,0 +1,115 @@
+.team-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .team-header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .team-header h2 {
+    font-size: 2.5rem;
+    color: #25c226;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  .team-subheader {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .team-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  }
+  
+  .team-image-container {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+  }
+  .color-overlay{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background-image:linear-gradient(0deg , #25c22568,rgba(0, 0, 0, 0));
+  }
+  .team-image-container:hover .color-overlay{
+    display: block;
+  }
+  .team-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: transform 0.5s ease;
+  }
+  
+  .team-card:hover .team-image {
+    transform: scale(1.05);
+  }
+  
+  .team-content {
+    border-top:4px solid #25c226;
+    padding: 25px;
+    text-align: center;
+  }
+  
+  .team-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .team-role {
+    color: #25c226;
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 1rem;
+  }
+  
+  .team-quote {
+    color: #666;
+    line-height: 1.6;
+    font-style: italic;
+    font-size: 0.95rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .team-header h2 {
+      font-size: 2rem;
+    }
+    
+    .team-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .team-image-container {
+      height: 250px;
+    }
+  }

@@ -1,0 +1,239 @@
+/* Hero Section Styles */
+
+  
+  .hero-container {
+    padding-top: 1rem;
+    display: flex;
+    gap: 1.5rem;
+    
+  }
+  
+  .main-banner {
+    flex: 8;
+  }
+  
+  .mini-banners {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  /* Carousel Styles */
+  .carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  
+  .carousel-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .carousel-slide.active {
+    opacity: 1;
+  }
+  
+  .carousel-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Banner Content Styles */
+  .banner-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .main-banner .banner-content {
+    padding-left: 10%;
+    max-width: 70%;
+  }
+  
+  .mini-banner .banner-content {
+    padding: 1.5rem;
+  }
+  
+  .badge {
+    display: inline-block;
+    background-color: #F98821;
+    color: #f8f8f8;
+    padding: 0.4rem 0.6rem;
+    border-radius: 15px;
+    font-weight: 100;
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  h2, h3 {
+    margin: 0 0 1rem 0;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  
+  .main-banner h2 {
+    font-size: 3rem;
+    color:white;
+  }
+  .main-banner .span-title{
+    color: #3bd73b;
+
+  }
+  
+  .mini-banner h3 {
+    font-size: 1.25rem;
+  }
+  
+  p {
+    margin: 0 0 1.5rem 0;
+    font-size: 0.99rem;
+    line-height: 1.5;
+  }
+  
+  .btn {
+    display: inline-block;
+    background: #25c226;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease;
+  }
+  .btn-mini{
+    color:#25c226;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: #cbffd3;
+  }
+  .btn-mini:hover{
+    text-decoration: underline;
+  }
+  
+  .btn:hover {
+    background: #15e033;
+  }
+  
+  /* Mini Banner Styles */
+  .mini-banner {
+    position: relative;
+    height: calc(50% - 0.75rem);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .mini-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Carousel Controls */
+  .carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(102, 230, 76, 0.5);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+    font-size: 1.25rem;
+    color: #00ff26;
+  }
+  
+  .carousel-control.prev {
+    left: 1rem;
+  }
+  
+  .carousel-control.next {
+    right: 1rem;
+  }
+  
+  .carousel-control:hover {
+    background: rgba(255, 255, 255, 0.8);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 992px) {
+    .hero-container {
+      flex-direction: column;
+      height: 100vh;
+    }
+    
+    
+    
+    .mini-banners {
+      flex-direction: row;
+    }
+    .main-banner{
+    height:auto;
+    }
+    .mini-banner {
+      height: auto;
+        flex: 1;
+      
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .mini-banners {
+      flex-direction: column;
+    }
+    
+    .main-banner .banner-content {
+      max-width: 100%;
+    }
+    
+    .carousel-slide {
+      background-position: 60% center;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .banner-content {
+      padding: 1rem;
+    }
+    
+    .main-banner h2 {
+      font-size: 1.5rem;
+    }
+    
+    .mini-banner h3 {
+      font-size: 1rem;
+    }
+    
+    p {
+      font-size: 0.8rem;
+    }
+  }
