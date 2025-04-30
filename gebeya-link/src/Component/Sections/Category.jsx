@@ -99,20 +99,21 @@ const CategoryCarousel = () => {
   // Handle responsive items per slide
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 1400) {
-        setItemsPerSlide(6);
-      } else if (window.innerWidth >= 1200) {
-        setItemsPerSlide(5);
-      } else if (window.innerWidth >= 992) {
-        setItemsPerSlide(6);
-      } else if (window.innerWidth >= 768) {
-        setItemsPerSlide(4);
-      } 
-      else if (window.innerWidth >= 468) {
-        setItemsPerSlide(4);
-      }else {
-        setItemsPerSlide(2);
-      }
+      // if (window.innerWidth >= 1200) {
+    
+      // // } else if (window.innerWidth >= 1200) {
+      // //   setItemsPerSlide(5);
+      // // } else if (window.innerWidth >= 992) {
+      // //   setItemsPerSlide(6);
+      // // } else if (window.innerWidth >= 768) {
+      // //   setItemsPerSlide(4);
+      // // } 
+      // // else if (window.innerWidth >= 468) {
+      // //   setItemsPerSlide(6);
+      // // }else {
+      //   // setItemsPerSlide(3);
+      // }
+      setItemsPerSlide(7);
     };
 
     handleResize();
@@ -156,13 +157,13 @@ const CategoryCarousel = () => {
 
   // SVG Icons
   const ChevronLeft = () => (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <svg width="90" height="90" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="10" strokeLinecap="round" strokeLinejoin="round">
       <polyline points="15 18 9 12 15 6"></polyline>
     </svg>
   );
 
   const ChevronRight = () => (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <svg width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="10" strokeLinecap="round" strokeLinejoin="round">
       <polyline points="9 18 15 12 9 6"></polyline>
     </svg>
   );
@@ -209,31 +210,28 @@ const CategoryCarousel = () => {
 
   return (
     <div className="container-fluid px-4 py-5">
-      <div className="container">
+      <div className="container ">
         <div className="d-flex justify-content-between align-items-center mb-4">
           <h2 className="mb-0 font-weight-bold">Featured Categories</h2>
           <div className="d-flex">
-            <button 
-              className="btn btn-circle mr-2"
-              onClick={prevSlide}
-            >
-              <ChevronLeft />
-            </button>
-            <button 
-              className="btn btn-circle"
-              onClick={nextSlide}
-            >
-              <ChevronRight />
-            </button>
+           
+            
           </div>
         </div>
 
         <div className="category-carousel-container">
-          <div className="category-carousel-track">
+          <div className="category-carousel-track d-flex align-items-center position-relative ">
+          <button 
+              className="btn btn1 btn-circle position-absolute  "
+              onClick={prevSlide} 
+              style={{ zIndex: '5', left: '0%' }}
+            >
+              <ChevronLeft />
+            </button>
             {getVisibleItems().map((product) => (
-              <div key={product.id} className="category-carousel-item">
-                <div className="card product-card h-100 border-0 overflow-hidden">
-                  <div className="card-img-container position-relative">
+              <div key={product.id} className="category-carousel-item ">
+                <div className="card product-card h-100 border-0 overflow-hidden the-card ">
+                  <div className="card-img-container position-relative h-100">
                     <img 
                       src={product.image} 
                       className="card-img-top" 
@@ -290,6 +288,12 @@ const CategoryCarousel = () => {
                 </div>
               </div>
             ))}
+            <button 
+              className="btn btn2 position-absolute btn-circle z-3 mr-2 right-0"
+              onClick={nextSlide} style={{ right: '0%' ,zIndex: '5'}}
+            >
+              <ChevronRight />
+            </button>
           </div>
         </div>
       </div>
