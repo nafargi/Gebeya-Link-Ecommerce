@@ -4,18 +4,18 @@ import slider2 from "../images/slider-2.jpg";
 import adbanner1 from "../images/ad-banner-1.jpg";
 import adbanner2 from "../images/ad-banner-2.jpg";
 import adbanner3 from "../images/ad-banner-3.jpg";
-import attaricedal from "../images/atta-rice-dal.png";
-import petcare from "../images/pet-care.png";
-import cleaningessentials from "../images/cleaning-essentials.png";
-import babycare from "../images/baby-care.png";
-import chickenmeatfish from "../images/chicken-meat-fish.png";
-import colddrinksjuices from "../images/cold-drinks-juices.png";
-import teacoffeedrinks from "../images/tea-coffee-drinks.png";
-import instantfood from "../images/instant-food.png";
-import bakerybiscuits from "../images/bakery-biscuits.png";
-import snackmunchies from "../images/snack-munchies.png";
-import fruitsvegetables from "../images/fruits-vegetables.png";
-import dairybreadeggs from "../images/dairy-bread-eggs.png";
+import attaricedal from "../images/product/p1.png";
+import petcare from "../images/product/p14.png";
+import cleaningessentials from "../images/product/p5.png";
+import babycare from "../images/product/p11.png";
+import chickenmeatfish from "../images/product/p13.png";
+import colddrinksjuices from "../images/product/p3.png";
+import teacoffeedrinks from "../images/product/p15.png";
+import instantfood from "../images/product/p7.png";
+import bakerybiscuits from "../images/product/p4.png";
+import snackmunchies from "../images/product/p8.png";
+import fruitsvegetables from "../images/product/p17.png";
+import dairybreadeggs from "../images/product/p6.png";
 import grocerybanner from "../images/grocery-banner.png";
 import grocerybanner2 from "../images/grocery-banner-2.jpg";
 import map from "../images/map.png";
@@ -54,6 +54,7 @@ import minibanner3 from "../images/banner/mini-banner-2.jpg";
 
 import HeroSection from "../Component/Sections/HeroSection";
 import CategoryCarousel from "../Component/Sections/Category";
+import AllProduct from "../Component/Sections/AllProduct";
 // import "slick-carousel/slick/slick.css"; mini2
 // import "slick-carousel/slick/slick-theme.css";
 import { Slide, Zoom } from "react-awesome-reveal";
@@ -392,6 +393,7 @@ const Home = () => {
               </section>
               {/* section */}
             </>
+            <AllProduct />
             <>
               {/* section category */}
               <section className="my-lg-14 my-8">
@@ -425,7 +427,8 @@ const Home = () => {
                               <img
                                 src={dairybreadeggs}
                                 alt="dairy-bread-eggs"
-                                className="card-image rounded  " style={{ border:"2px solid rgb(255, 255, 255)" }}
+                                                                  className="card-image w-100 rounded  " style={{ border:"2px solid rgb(255, 255, 255)" ,backgroundColor:"white"}}
+
                               />
                             </Link>
                             {/* text */}
@@ -449,7 +452,8 @@ const Home = () => {
                               <img
                                 src={fruitsvegetables}
                                 alt="fruits-vegetables"
-                                                                className="card-image rounded  " style={{ border:"2px solid rgb(255, 255, 255)" }}
+                                className="card-image w-100 rounded  " style={{ border:"2px solid rgb(255, 255, 255)" ,backgroundColor:"white"}}
+
 
   
                               />
@@ -475,7 +479,8 @@ const Home = () => {
                               <img
                                 src={snackmunchies}
                                 alt="snack-munchies"
-                                                                                                className="card-image rounded  " style={{ border:"2px solid rgb(255, 255, 255)" }}
+                                                                className="card-image w-100 rounded  " style={{ border:"2px solid rgb(255, 255, 255)" ,backgroundColor:"white"}}
+
 
   
                               />
@@ -501,7 +506,8 @@ const Home = () => {
                               <img
                                 src={bakerybiscuits}
                                 alt="bakery-biscuits"
-                                                                                                className="card-image rounded  " style={{ border:"2px solid rgb(255, 255, 255)" }}
+                                                                className="card-image w-100 rounded  " style={{ border:"2px solid rgb(255, 255, 255)" ,backgroundColor:"white"}}
+
 
   
                               />
@@ -527,7 +533,8 @@ const Home = () => {
                               <img
                                 src={instantfood}
                                 alt="instant-food"
-                                                                                                className="card-image rounded  " style={{ border:"2px solid rgb(255, 255, 255)" }}
+                                                                className="card-image w-100 rounded  " style={{ border:"2px solid rgb(255, 255, 255)" ,backgroundColor:"white"}}
+
 
   
                               />
@@ -553,7 +560,8 @@ const Home = () => {
                               <img
                                 src={teacoffeedrinks}
                                 alt="tea-coffee-drinks"
-                                                                                                className="card-image rounded  " style={{ border:"2px solid rgb(255, 255, 255)" }}
+                                                                className="card-image w-100 rounded  " style={{ border:"2px solid rgb(255, 255, 255)" ,backgroundColor:"white"}}
+
 
   
                               />
@@ -578,7 +586,8 @@ const Home = () => {
                               <img
                                 src={colddrinksjuices}
                                 alt="cold-drinks-juices"
-                                                                                                className="card-image rounded  " style={{ border:"2px solid rgb(255, 255, 255)" }}
+                                                                className="card-image w-100 rounded  " style={{ border:"2px solid rgb(255, 255, 255)" ,backgroundColor:"white"}}
+
 
   
                               />
@@ -603,7 +612,8 @@ const Home = () => {
                               <img
                                 src={chickenmeatfish}
                                 alt="chicken-meat-fish"
-                                                                                                className="card-image rounded  " style={{ border:"2px solid rgb(255, 255, 255)" }}
+                                                                className="card-image w-100 rounded  " style={{ border:"2px solid rgb(255, 255, 255)" ,backgroundColor:"white"}}
+
 
   
                               />
@@ -629,7 +639,8 @@ const Home = () => {
                               <img
                                 src={babycare}
                                 alt="baby-care"
-                                                                                                className="card-image rounded  " style={{ border:"2px solid rgb(255, 255, 255)" }}
+                                                                className="card-image w-100 rounded  " style={{ border:"2px solid rgb(255, 255, 255)" ,backgroundColor:"white"}}
+
 
   
                               />
@@ -655,7 +666,7 @@ const Home = () => {
                               <img
                                 src={cleaningessentials}
                                 alt="cleaning-essentials"
-                                                                                                className="card-image rounded  " style={{ border:"2px solid rgb(255, 255, 255)" }}
+                                className="card-image w-100 rounded  " style={{ border:"2px solid rgb(255, 255, 255)" ,backgroundColor:"white"}}
 
   
                               />
@@ -681,7 +692,8 @@ const Home = () => {
                               <img
                                 src={petcare}
                                 alt="pet-care"
-                                                                                                className="card-image rounded  " style={{ border:"2px solid rgb(255, 255, 255)" }}
+                                                                className="card-image w-100 rounded  " style={{ border:"2px solid rgb(255, 255, 255)" ,backgroundColor:"white"}}
+
 
   
                               />
@@ -707,7 +719,8 @@ const Home = () => {
                               <img
                                 src={attaricedal}
                                 alt="atta-rice-dal"
-                                                                                                className="card-image rounded  " style={{ border:"2px solid rgb(255, 255, 255)" }}
+                                                                className="card-image w-100 rounded  " style={{ border:"2px solid rgb(255, 255, 255)" ,backgroundColor:"white"}}
+
 
   
                               />

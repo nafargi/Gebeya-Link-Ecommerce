@@ -35,7 +35,7 @@ import MyAccountSignIn from "./pages/Accounts/MyAccountSignIn";
 import MyAccountSignUp from "./pages/Accounts/MyAccountSignUp";
 const App = () => {
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-10">
      
         <Header/>
         <Routes>

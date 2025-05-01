@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import './Category.css';
-import creal from '../../images/category/creal.png';
-import veg from '../../images/category/veg.png';
-import lentils from '../../images/category/lentils.png';
-import seasonal from '../../images/category/seasonal.png';
-import nuts from '../../images/category/nuts.png';
-import fruit from '../../images/category/fruit.png';
-import farm from '../../images/category/farm.png';
-// import  from '../../images/product/p8.png';
+import prod1 from '../../images/product/p1.png';
+import prod2 from '../../images/product/p10.png';
+import prod3 from '../../images/product/p3.png';
+import prod4 from '../../images/product/p4.png';
+import prod5 from '../../images/product/p5.png';
+import prod6 from '../../images/product/p6.png';
+import prod7 from '../../images/product/p7.png';
+import prod8 from '../../images/product/p8.png';
 
 const CategoryCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -20,7 +20,7 @@ const CategoryCarousel = () => {
     {
       id: 1,
       name: 'Fresh Fruit',
-      image: fruit,
+      image: prod1,
       price: 129.99,
       oldPrice: 159.99,
       rating: 4.5,
@@ -31,7 +31,7 @@ const CategoryCarousel = () => {
     {
       id: 2,
       name: 'Fresh Vegetables',
-      image: veg,
+      image: prod2,
       price: 89.99,
       oldPrice: 119.99,
       rating: 4.2,
@@ -42,7 +42,7 @@ const CategoryCarousel = () => {
     {
       id: 3,
       name: 'Grain & Cereals',
-      image: creal,
+      image: prod3,
       price: 699.99,
       oldPrice: 899.99,
       rating: 4.8,
@@ -53,7 +53,7 @@ const CategoryCarousel = () => {
     {
       id: 4,
       name: 'Pulse & Lentils',
-      image: lentils,
+      image: prod4,
       price: 49.99,
       oldPrice: null,
       rating: 4.3,
@@ -64,7 +64,7 @@ const CategoryCarousel = () => {
     {
       id: 5,
       name: 'Seasonal & Exotic Fruits',
-      image: seasonal,
+      image: prod5,
       price: 79.99,
       oldPrice: 99.99,
       rating: 4.1,
@@ -75,7 +75,7 @@ const CategoryCarousel = () => {
     {
       id: 6,
       name: 'Organic Fruits',
-      image: farm,
+      image: prod6,
       price: 249.99,
       oldPrice: 299.99,
       rating: 4.6,
@@ -86,7 +86,7 @@ const CategoryCarousel = () => {
     {
       id: 7,
       name: 'Dry Fruits & Nuts', 
-      image: nuts,
+      image:prod7,
       price: 199.99,
       oldPrice: null,
       rating: 4.9,
@@ -230,7 +230,7 @@ const CategoryCarousel = () => {
             </button>
             {getVisibleItems().map((product) => (
               <div key={product.id} className="category-carousel-item ">
-                <div className="card product-card h-100 border-0 overflow-hidden the-card p-2 ">
+                <div className="card product-card h-100 border-0 overflow-hidden the-card p-2">
                   <div className="card-img-container   position-relative h-100">
                     <img 
                       src={product.image} 
@@ -278,12 +278,12 @@ const CategoryCarousel = () => {
                         <span className="old-price ml-2">${product.oldPrice.toFixed(2)}</span>
                       )}
                     </div>
-                    {/* <button 
+                    <button 
                       className="btn btn-dark btn-block rounded-pill py-2"
                       onClick={() => addToCart(product.id)}
                     >
                       <ShoppingCart /> Add to Cart
-                    </button> */}
+                    </button>
                   </div>
                 </div>
               </div>

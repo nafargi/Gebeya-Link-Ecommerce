@@ -5,7 +5,7 @@
     padding-top: 1rem;
     display: flex;
     gap: 1.5rem;
-    
+    height: auto;
   }
   
   .main-banner {
@@ -23,7 +23,7 @@
   .carousel {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 70vh;
     border-radius: 0.5rem;
     overflow: hidden;
   }
@@ -207,8 +207,9 @@
   }
   
   @media (max-width: 768px) {
-    .mini-banners {
-      flex-direction: column;
+   
+    .carousel{
+      height: 100%;
     }
     
     .main-banner .banner-content {
@@ -221,6 +222,9 @@
   }
   
   @media (max-width: 576px) {
+     .mini-banners {
+      flex-direction: column;
+    }
     .banner-content {
       padding: 1rem;
     }
