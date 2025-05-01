@@ -46,7 +46,7 @@ const MyAcconutNotification = () => {
               <div className="col-lg-3 col-md-4 col-12 border-end  d-none d-md-block">
                 <div className="pt-10 pe-lg-10">
                   {/* nav */}
-                  <ul className="nav flex-column nav-pills nav-pills-dark">
+                  <ul className="nav flex-column nav-pills ">
                     {/* nav item */}
                     <li className="nav-item">
                       <Link
@@ -84,6 +84,8 @@ const MyAcconutNotification = () => {
                       <Link
                         className="nav-link active"
                         to="/MyAcconutNotification"
+                        style={{backgroundColor:'#ccf7be',color:'#25c226'}}
+
                       >
                         <i className="fas fa-bell me-2" />
                         Notification

@@ -50,7 +50,7 @@ const MyAcconutPaymentMethod = () => {
                 <div className="col-lg-3 col-md-4 col-12 border-end  d-none d-md-block">
                   <div className="pt-10 pe-lg-10">
                     {/* nav */}
-                    <ul className="nav flex-column nav-pills nav-pills-dark">
+                    <ul className="nav flex-column nav-pills">
                       {/* nav item */}
                       <li className="nav-item">
                         <Link
@@ -81,6 +81,8 @@ const MyAcconutPaymentMethod = () => {
                         <Link
                           className="nav-link active"
                           to="/MyAcconutPaymentMethod"
+                          style={{backgroundColor:'#ccf7be',color:'#25c226'}}
+
                         >
                           <i className="fas fa-credit-card me-2" />
                           Payment Method

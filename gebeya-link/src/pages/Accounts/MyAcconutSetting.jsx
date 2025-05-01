@@ -46,7 +46,7 @@ const MyAcconutSetting = () => {
                 <div className="col-lg-3 col-md-4 col-12 border-end  d-none d-md-block">
                   <div className="pt-10 pe-lg-10">
                     {/* nav item */}
-                    <ul className="nav flex-column nav-pills nav-pills-dark">
+                    <ul className="nav flex-column nav-pills ">
                       <li className="nav-item">
                         <Link
                           className="nav-link "
@@ -62,6 +62,8 @@ const MyAcconutSetting = () => {
                         <Link
                           className="nav-link active"
                           to="/MyAccountSetting"
+                          style={{backgroundColor:'#ccf7be',color:'#25c226'}}
+
                         >
                           <i className="fas fa-cog me-2" />
                           Settings

@@ -720,7 +720,8 @@ const Header = () => {
           border-right: 0;
         }
           .bg-cusotm {
-            background-color:rgba(86, 252, 31, 0.14) !important;
+          
+            background-color:rgb(168, 255, 139) !important;
 
           }
         .dropdown-item:hover {

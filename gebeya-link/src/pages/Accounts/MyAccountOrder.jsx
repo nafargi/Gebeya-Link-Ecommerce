@@ -53,15 +53,16 @@ const MyAccountOrder = () => {
               <div className="col-lg-3 col-md-4 col-12 border-end  d-none d-md-block">
                 <div className="pt-10 pe-lg-10">
                   {/* nav */}
-                  <ul className="nav flex-column nav-pills nav-pills-dark">
+                  <ul className="nav flex-column nav-pills  " >
                     {/* nav item */}
-                    <li className="nav-item">
+                    <li className="nav-item " >
                       <Link
-                        className="nav-link active"
+                        className="nav-link active "
                         aria-current="page"
                         to="/MyAccountOrder"
+                        style={{backgroundColor:'#ccf7be',color:'#25c226'}}
                       >
-                        <i className="fas fa-shopping-bag me-2" />
+                        <i className="fas fa-shopping-bag me-2 " />
                         Your Orders
                       </Link>
                     </li>

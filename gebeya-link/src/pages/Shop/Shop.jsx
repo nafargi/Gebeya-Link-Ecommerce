@@ -4,16 +4,16 @@ import assortment from "../../images/assortment-citrus-fruits.png";
 import { Link } from "react-router-dom";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-import product1 from "../../images/category-baby-care.jpg";
-import product2 from "../../images/category-atta-rice-dal.jpg";
-import product3 from "../../images/category-bakery-biscuits.jpg";
-import product4 from "../../images/category-chicken-meat-fish.jpg";
-import product5 from "../../images/category-cleaning-essentials.jpg";
-import product6 from "../../images/category-dairy-bread-eggs.jpg";
-import product7 from "../../images/category-instant-food.jpg";
-import product8 from "../../images/category-pet-care.jpg";
-import product9 from "../../images/category-snack-munchies.jpg";
-import product10 from "../../images/category-tea-coffee-drinks.jpg";
+import product1 from "../../images/product/p10.png";
+import product2 from "../../images/product/p15.png";
+import product3 from "../../images/product/p13.png";
+import product4 from "../../images/product/p8.png";
+import product5 from "../../images/product/p16.png";
+import product6 from "../../images/product/p17.png";
+import product7 from "../../images/product/p18.png";
+import product8 from "../../images/product/pngwing.com (10).png";
+import product9 from "../../images/product/pngwing.com (6).png";
+import product10 from "../../images/product/pngwing.com (11).png";
 import ScrollToTop from "../ScrollToTop";
 
 function Dropdown() {
@@ -61,8 +61,9 @@ color="#0aad0a"
 
       <div className="row">
         {/* Vertical Dropdowns Column */}
-        <h5 className="mb-3 mt-8">Categories</h5>
         <div className="col-md-3">
+          <div className="p-4 border mt-8 rounded-2 ">
+          <h5 className="mb-3 ">Categories</h5>
           {dropdownData.map((dropdown, index) => (
             <ul className="nav flex-column" key={index}>
               <li className="nav-item">
@@ -99,8 +100,9 @@ color="#0aad0a"
               </li>
             </ul>
           ))}
+          </div>
           <div>
-            <div className="py-4">
+            <div className="p-4 border rounded-2 mt-4  ">
               <h5 className="mb-3">Stores</h5>
               <div className="my-4">
                 {/* input */}
@@ -216,7 +218,7 @@ color="#0aad0a"
                 </label>
               </div>
             </div>
-            <div className="py-4">
+            <div className="p-4 border rounded-2 mt-4 ">
               {/* price */}
               <h5 className="mb-3">Price</h5>
               <div>
@@ -227,7 +229,7 @@ color="#0aad0a"
               </div>
             </div>
             {/* rating */}
-            <div className="py-4">
+            <div className="p-4 border rounded-2 mt-4 ">
               <h5 className="mb-3">Rating</h5>
               <div>
                 {/* form check */}
@@ -318,7 +320,7 @@ color="#0aad0a"
                 </div>
               </div>
             </div>
-            <div className="py-4">
+            <div className="p-4 border rounded-2 mt-4 ">
               {/* Banner Design */}
               {/* Banner Content */}
               <div className="position-absolute p-5 py-8">
@@ -345,9 +347,9 @@ color="#0aad0a"
         {/* Cards Column */}
         <div className="col-lg-9 col-md-8">
           {/* card */}
-          <div className="card mb-4 bg-light border-0">
+          <div className="card mb-4 bg-light border-0  mt-8">
             {/* card body */}
-            <div className=" card-body p-9">
+            <div className=" card-body  p-9">
               <h1 className="mb-0">Snacks &amp; Munchies</h1>
             </div>
           </div>

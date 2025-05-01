@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Card, Spinner, Alert, Pagination, Badge } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-
+import img from '../../images/product/p15.png'; // Placeholder image
 const ProductListing = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -70,7 +70,7 @@ const ProductListing = () => {
                 {product.image ? (
                   <Card.Img 
                     variant="top" 
-                    src={product.image} 
+                    src={img} 
                     alt={product.name}
                     className="img-fluid h-100 w-100 object-fit-cover"
                   />
